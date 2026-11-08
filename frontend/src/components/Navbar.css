@@ -1,0 +1,122 @@
+
+/* Main Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 18px 5%;
+  background: #0f0f17;
+  border-bottom: 1px solid #302344;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #c084fc;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar .logo:hover {
+  color: #e9d5ff;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links a {
+  color: #e5e1eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #c084fc;
+}
+
+/* User Greeting */
+.navbar .nav-links span {
+  color: #c084fc;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Logout Button */
+.navbar .nav-links button {
+  background: #9333ea;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navbar .nav-links button:hover {
+  background: #7e22ce;
+}
+
+/* Cart Link */
+.navbar .nav-links a[href="/cart"] {
+  background: #9333ea;
+  color: #ffffff;
+  padding: 9px 15px;
+  border-radius: 7px;
+}
+
+.navbar .nav-links a[href="/cart"]:hover {
+  background: #7e22ce;
+  color: #ffffff;
+}
+
+/* Wishlist Link */
+.navbar .nav-links a[href="/wishlist"] {
+  color: #c084fc;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    padding: 18px 4%;
+  }
+
+  .navbar .nav-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar .logo {
+    font-size: 22px;
+  }
+
+  .navbar .nav-links {
+    gap: 12px;
+  }
+
+  .navbar .nav-links a {
+    font-size: 13px;
+  }
+}

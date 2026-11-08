@@ -1,0 +1,98 @@
+
+.my-orders {
+  max-width: 1100px;
+  margin: 45px auto;
+  padding: 25px;
+  color: #ffffff;
+}
+
+.my-orders h1 {
+  color: #c084fc;
+  font-size: 34px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.my-orders > p {
+  text-align: center;
+  color: #d1c5df;
+  font-size: 16px;
+}
+
+.order-card {
+  background: #15151f;
+  border: 1px solid #302344;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.order-card h3 {
+  color: #c084fc;
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+
+.order-card h4 {
+  color: #c084fc;
+  margin-top: 22px;
+}
+
+.order-card p {
+  color: #e5e1eb;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.order-card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 11px 20px;
+  background: #9333ea;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.order-card a:hover {
+  background: #7e22ce;
+}
+
+.cancel-order-btn {
+  padding: 10px 18px;
+  margin: 10px 0;
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-order-btn:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+.cancel-order-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .my-orders {
+    margin: 25px auto;
+    padding: 15px;
+  }
+
+  .my-orders h1 {
+    font-size: 27px;
+  }
+
+  .order-card {
+    padding: 18px;
+  }
+}

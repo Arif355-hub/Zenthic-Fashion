@@ -1,0 +1,116 @@
+
+.admin-orders {
+  max-width: 1200px;
+  margin: 45px auto;
+  padding: 25px;
+  color: #ffffff;
+}
+
+.admin-orders h1 {
+  color: #c084fc;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Order Card */
+.admin-orders .admin-order-card {
+  background: #15151f;
+  border: 1px solid #302344;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.admin-orders .admin-order-card h3 {
+  color: #c084fc;
+  overflow-wrap: anywhere;
+}
+
+.admin-orders .admin-order-card h4 {
+  color: #c084fc;
+  margin-top: 20px;
+}
+
+.admin-orders .admin-order-card p {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.7;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Status Text */
+.admin-orders .admin-order-card strong {
+  color: #c084fc;
+  display: inline;
+  visibility: visible;
+}
+
+/* Status Dropdown */
+.admin-orders .admin-order-card select {
+  background: #211a2d;
+  color: #ffffff;
+  border: 1px solid #7541a5;
+  border-radius: 7px;
+  padding: 10px 12px;
+  margin: 8px 0 8px 10px;
+  max-width: 100%;
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.admin-orders .admin-order-card select option {
+  background: #211a2d;
+  color: #ffffff;
+}
+
+/* Buttons */
+.admin-orders button {
+  background: #9333ea;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  margin: 8px 5px 8px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.admin-orders button:hover:not(:disabled) {
+  background: #7e22ce;
+}
+
+.admin-orders button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Inputs */
+.admin-orders input {
+  background: #211a2d;
+  color: #ffffff;
+  border: 1px solid #7541a5;
+  border-radius: 7px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .admin-orders {
+    margin: 25px auto;
+    padding: 15px;
+  }
+
+  .admin-orders h1 {
+    font-size: 27px;
+  }
+
+  .admin-orders .admin-order-card {
+    padding: 18px;
+  }
+}
